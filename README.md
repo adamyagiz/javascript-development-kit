@@ -10,4 +10,9 @@ Pluralsight - Building a JavaScript Development Environment
 - installed node modules
 - globally installed Node Security Platform module
   - consider scripting this check into build/deployment (i.e. at npm start?)
-- 
+
+## [Module 5. Development Webserver]
+- set up Express
+- created `srcServer.js` file to run and open our app
+- added boilerplate html file in `src` directory
+- configure localtunnel for sharing work-in-progress
