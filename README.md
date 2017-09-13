@@ -16,3 +16,15 @@ Pluralsight - Building a JavaScript Development Environment
 - created `srcServer.js` file to run and open our app
 - added boilerplate html file in `src` directory
 - configure localtunnel for sharing work-in-progress
+
+## [Module 6. Automation]
+- reviewed automation options
+- set up npm scripts (over grunt or gulp)
+  - eliminate dependence on plugin authors
+  - easier to debug
+  - better docs and easy to learn
+- implemented simple start script
+- added security check and localtunnel scripts
+- set up multiple concurrent tasks
+  - `start` triggers node package security check and starts up the webserver/app
+  - `share` starts up the webserver/app and opens up localtunnel route for sharing
