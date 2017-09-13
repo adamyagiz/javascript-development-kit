@@ -28,3 +28,8 @@ Pluralsight - Building a JavaScript Development Environment
 - set up multiple concurrent tasks
   - `start` triggers node package security check and starts up the webserver/app
   - `share` starts up the webserver/app and opens up localtunnel route for sharing
+
+## [Module 7. Transpiling]
+- set up and configured Babel
+- set `babel-node` to transpile build scripts
+- tweak build scripts for ES6 import syntax
