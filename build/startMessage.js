@@ -1,2 +1,2 @@
-import chalk from 'chalk';
+import chalk from 'chalk'; // ES6 module format
 console.log(chalk.green('Starting app in dev mode...'));

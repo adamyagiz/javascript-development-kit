@@ -33,3 +33,12 @@ Pluralsight - Building a JavaScript Development Environment
 - set up and configured Babel
 - set `babel-node` to transpile build scripts
 - tweak build scripts for ES6 import syntax
+
+## [Module 8. Bundling]
+- reviewed bundler options
+- Webpack bundles more than just JS; bundles things like HTML, CSS, images, fonts, etc. as well
+- configured Webpack
+- configured Express to serve new Webpack bundle
+- created an app entry point so we have some actual JavaScript for Webpack to munch on
+- handle CSS bundling
+- Sourcemaps only download when dev tools request them. Otherwise, they're not served to end-users.
