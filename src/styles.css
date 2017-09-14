@@ -1,3 +1,6 @@
+body {
+  padding: 10px;
+}
 * {
   color: rgba(59, 76, 255, 1);
 }
