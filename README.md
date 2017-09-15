@@ -1,4 +1,4 @@
-# javascript-development-kit [![aky](https://img.shields.io/badge/👍-fantastic-brightgreen.svg?style=flat-square)](https://cdnjs.com/libraries/jquery)
+# javascript-development-kit [![fantastic](https://img.shields.io/badge/👍-fantastic-brightgreen.svg?style=flat-square)](https://adamyagiz.com)
 Pluralsight - Building a JavaScript Development Environment
 
 ## [Module 3. Editors and Configuration]
@@ -68,3 +68,38 @@ Pluralsight - Building a JavaScript Development Environment
     - Teams like XO, Airbnb, or standardJS.
 - ESLint doesn't watch files; have to run via command line. Alternatively, use something like eslint-loader or eslint-watch: eslint-loader runs every time we run our build. eslint-watch adds file watch capability.
   - eslint-watch: not tied to Webpack, better warning/error formatting, displays clean messages, easily lint tests and build scripts.
+
+## [Module 10. Testing and Continuous Integration]
+- Testing Styles: 
+  - Unit - testing a single function or module, in isolation. Assert that a function will return an expected value when passed certain parameters.
+  - Integration - Test interactions between modules in a project.
+  - UI - Automate interactions with the UI.
+- 6 key testing decisions:
+  - Framework
+    - Mocha - highly configurable; large ecosystem of support; no built-in assertion library
+    - Jasmine - as popular as Mocha; includes built-in assertion library
+    - Tape - lean and simple configuration
+    - QUnit - oldest; created by jQuery creators
+    - AVA - newer; runs tests in parallel and only reruns impacted/failed tests to speed results
+    - Jest - from Facebook; popular with React developers; essentially a wrapper over Jasmine
+  - Assertion Library
+    - since we will use Mocha, we'll also use Chai for assertion testing
+  - Helper libraries
+    - JSDOM - simulate the browser DOM in node; run DOM-related tests without a browser
+    - Cheerio - jQuery for the server; query virtual DOM using jQuery selectors
+  - WHERE to run 
+    - Browser? - Karma, Testem are popular test runners for running in an actual browser; requires more config and resources.
+    - Headless browser? - PhantomJS (no visible UI)
+    - In-memory DOM? - JSDOM simulates an actual browser; lighter weight alternative to PhantomJS because there isn't a full browser behind the scenes.
+  - WHERE to place tests
+    - Centralized? - all tests in a "tests" folder? creates clutter??
+    - Along side? - easy imports; clear visibility; easy to find/open; no folder structure
+  - WHEN to run tests
+    - UNIT tests should run every time you save!💾
+      - Results in rapid feedback
+      - Facilitates test-driven-development
+      - Automatic = low friction
+      - Increases test visibility
+    - INTEGRATION tests should be run separately
+- Reviewed continuous integration (CI) considerations
+- Configured Travis CI (Linux-based) and Appveyor (Windows-based)
