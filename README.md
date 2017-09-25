@@ -103,3 +103,35 @@ Pluralsight - Building a JavaScript Development Environment
     - INTEGRATION tests should be run separately
 - Reviewed continuous integration (CI) considerations
 - Configured Travis CI (Linux-based) and Appveyor (Windows-based)
+
+## [Module 11. HTTP Calls]
+- HTTP Call Approaches:
+  - Node: http, request
+  - Browser: XMLHttpRequest (XHR), jQuery, framework-based (Angular, etc.), Fetch (requires polyfills for some browsers)
+  - Node & Browser: isomorphic-fetch, xhr SuperAgent, Axios
+- Centralize API calls
+  - One place to congifure all API calls
+  - Handle preloader logic (and visuals like spinners)
+  - Handle errors efficiently
+  - Single seam for mocking - point to mock API instead of the real one with a single line change
+- Set up Fetch
+- Set up dummy API for mocking
+- Set up mock HTTP
+  - Nock: hijacks http request to specified url and return what you specify instead.
+  - Static JSON
+  - Create DEV webserver
+    - api-mock
+    - JSON server - fake db that actually updates json file to feel like the real things
+    - JSON schema faker - generate dynamic fake data (string, boolean, etc)
+    - Browsersync, Express, etc. - more work
+  1. Declare shchema
+    - JSON schema faker ([http://json-schema-faker.js.org](http://json-schema-faker.js.org))
+  2. Generate random data
+    - faker.js ([https://github.com/Marak/faker.js/wiki](https://github.com/Marak/faker.js/wiki))
+    - chance.js
+    - randexp.js
+    - (all 3 libs come bundled in JSON Schema Faker)
+  3. Serve data via API
+    - JSON server ([https://github.com/typicode/json-server](https://github.com/typicode/json-server))
+
+

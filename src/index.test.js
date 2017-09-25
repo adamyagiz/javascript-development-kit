@@ -13,11 +13,11 @@ describe('Our first test', () => {
 
 // check the inner html of the h1 tag for specific value
 describe('index.html', () => {
-  it('should say hello', (done) => {
+  it('should have h1 Users heading', (done) => {
     const index = fs.readFileSync('./src/index.html', 'utf-8');
     jsdom.env(index, (err, window) => {
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal('Hello, world!');
+      expect(h1.innerHTML).to.equal('Users');
       done();
       window.close();
     });

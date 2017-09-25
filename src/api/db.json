@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 32451800,
+      "firstName": "Clovis",
+      "lastName": "Schulist",
+      "email": "August1@hotmail.com"
+    },
+    {
+      "id": 22338436,
+      "firstName": "Jordyn",
+      "lastName": "Russel",
+      "email": "Jasper.Howe1@yahoo.com"
+    },
+    {
+      "id": 11452271,
+      "firstName": "Madeline",
+      "lastName": "Ryan",
+      "email": "Lucy.Smitham@gmail.com"
+    }
+  ]
+}
