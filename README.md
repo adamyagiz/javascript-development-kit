@@ -152,7 +152,7 @@ Pluralsight - Building a JavaScript Development Environment
      ```
     v...
 
-    (Preferred) Organized by Feature (keeps feature-related files together in the dir structure):
+    ✅ Organized by Feature (keeps feature-related files together in the dir structure):
     ```
     /authors
     /courses
@@ -160,3 +160,48 @@ Pluralsight - Building a JavaScript Development Environment
      ```
   - Extract logic into "POJOs" => Plain Old JavaScript Objects
     - POJOs contain pure logic; no framework-specific code. (See [React Slingshot](https://github.com/coryhouse/react-slingshot). Even though it's a React project, the `utils` folder continas POJO logic files.)
+
+## [Module 13. Production Build]
+- Minification (to speed page loads)
+  - How does minification work?
+    - Shortens variable and function names
+    - Removes comments
+    - Removes whitespace and new lines
+    - With help of bundlers, eliminate dead code, tree-shaking, etc.
+    - Debug via sourcemap
+  - Set up minification
+    - created webpack production config and build script
+    - configured up distServer.js to handle our /dist files
+- Sourcemaps (generated to support debugging in production... it's gonna happen!)
+  - Toggle mock API
+    - modified baseUrl.js to accept and handle `useMockApi` query string
+    - Set up production build npm scripts
+- Dynamic HTML
+  - Why manipulate HTML for production?
+    - Reference bundles automatically
+    - Handle dynamic bundle names (for caching)
+    - Inject production-only resources
+    - Minify to save bandwidth
+  - Referencing bundled assets in HTML:
+    - Hard code 
+    - Manipulate via node
+    - ✅ html-webpack-plugin (via templating)
+- Cache busting (ensure users get the latest version of our code upon deployment)
+  - Set content headers to save http requests
+  - Force request for the latest version
+  - Set up:
+    - Hash the bundle file name
+    - Generate html dynamically
+    - Split out CSS 
+- Bundle splitting (prevents users from having to get the whole app when only part of it changes)
+  - Splitting JS into bundles helps speed initial page loads
+  - Avoid making users fetch code that isn't used on the particular pages/sections.
+- Error logging (for figuring out when bugs sneak their way into production)
+  - What to look for with an error logger:
+    - Error metadata: what browser? stack trace? previous actions? custom API for advanced data?
+    - Notifications and integration: e.g. emails or Slack notifications?
+    - Analytics and filtering: aggregating errors together, filtering list or setting rules for when notifications occur
+    - Price?
+  - Error tracking via Track.js (30-day free trial...👎)
+  - Adding conditional logic to HTML via HTML templating in html-webpack-plugin
+    - configure EJS templating in production build

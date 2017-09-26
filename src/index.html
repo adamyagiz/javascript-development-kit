@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <% if (htmlWebpackPlugin.options.randomToken) { %>
+      <script>
+        console.log('there is a random token: ' + '<%=htmlWebpackPlugin.options.randomToken%>');
+      </script>
+    <% } %>
   </head>
   <body>
 
@@ -20,6 +25,5 @@
       </tbody>
     </table>
 
-    <script src="bundle.js"></script>
   </body>
 </html>
