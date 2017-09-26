@@ -134,4 +134,29 @@ Pluralsight - Building a JavaScript Development Environment
   3. Serve data via API
     - JSON server ([https://github.com/typicode/json-server](https://github.com/typicode/json-server))
 
+## [Module 12. Project Structure]
+- Why include a demo app in the dev team starter kit?
+  - Many people learn by example.
+  - Demo app can provide guidance on directory structure and file naming, framework usage, testing, mock APIs, automadtes deployments, codifies desicions.
+  - Provides an interactive example of the starter kit working in a realistic scenario.
+- Structure Tips:
+  - Put JavaScript in a `.js` file! Resist the urge to shim in `<script>` tags.
+  - For larger projects, consider organizing by feature rather than by file type. For example:
 
+    Organized by File Type (files that serve the same purpose are stored together; i.e. MVC frameworks):
+    ```
+    /components
+    /data
+    /models
+    /views
+     ```
+    v...
+
+    (Preferred) Organized by Feature (keeps feature-related files together in the dir structure):
+    ```
+    /authors
+    /courses
+    ...
+     ```
+  - Extract logic into "POJOs" => Plain Old JavaScript Objects
+    - POJOs contain pure logic; no framework-specific code. (See [React Slingshot](https://github.com/coryhouse/react-slingshot). Even though it's a React project, the `utils` folder continas POJO logic files.)
