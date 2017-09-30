@@ -205,3 +205,29 @@ Pluralsight - Building a JavaScript Development Environment
   - Error tracking via Track.js (30-day free trial...👎)
   - Adding conditional logic to HTML via HTML templating in html-webpack-plugin
     - configure EJS templating in production build
+
+## [Module 14. Production Deployment]
+- Separating UI and API. Why?
+  - Allows for simple, low-risk, UI-only deploys (i.e. only upload static files from `dist` folder to your web server)
+  - Allows for separate concerns...
+    - Separate teams for front- and back-end can work without stepping on each others toes
+    - Less for a single developer to understand; share the load
+    - Can scale the back-end separately
+  - Cheap UI hosting for static HTML, CSS, and JavaScript 
+  - Serve static front-end UI files from a CDN
+  - Use the API tech you like (JavaScript, Java, ruby, etc.)
+- Automated Deployment
+  - Cloud hosting options abound: AWS, MS Azure, Heroku, Firebase, Google Cloud Platform, Netlify, GitHub Pages, Surge, and so on... (Netlify, GitHub Pages, Surge only serve static files)
+  - For demo: Heroku for API, Surge for UI
+    - Set up heroku api workflow
+    - Set up surge workflow for static UI files
+    - Path to Production: `npm start` => `npm run build` => `npm run deploy`
+- Keeping dev starter kit updated
+  - Yeoman scaffold
+  - GitHub repository
+  - npm package
+- Challenge:
+  - Meet with the team
+    - Would we benefit from a starter kit?
+    - What are our JS pain points? Testing? Deployment? Coding styles?
+    - Would we benefit from a demo app?
