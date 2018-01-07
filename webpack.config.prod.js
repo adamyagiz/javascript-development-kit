@@ -1,5 +1,3 @@
-'use strict';
-
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
@@ -64,4 +62,4 @@ export default {
       {test: /\.css$/, loader: ExtractTextPlugin.extract('css?sourceMap')}
     ]
   }
-}
+};

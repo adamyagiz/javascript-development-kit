@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * This script generates mock data for local development.
  * This way, you don't have to point to an actual API,

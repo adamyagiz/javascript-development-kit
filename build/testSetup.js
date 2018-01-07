@@ -1,5 +1,3 @@
-'use strict';
-
 // This file isn't transpiled so must use CommonJS and ES5
 
 // Register babel to transpile oru tests before Mocha runs our tests

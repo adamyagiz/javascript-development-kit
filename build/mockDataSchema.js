@@ -1,12 +1,10 @@
-'use strict';
-
 export const schema = {
   "type": "object",
   "properties": {
     "users": {
       "type": "array",
-      "minItems": 3,
-      "maxItems": 5,
+      "minItems": 7,
+      "maxItems": 10,
       "items": {
         "type": "object",
         "properties": {

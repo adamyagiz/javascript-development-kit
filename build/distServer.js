@@ -1,5 +1,3 @@
-'use strict';
-
 import express from 'express'; // ES6 module format
 import path from 'path';
 import open from 'open';

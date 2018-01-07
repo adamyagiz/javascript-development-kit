@@ -1,5 +1,3 @@
-'use strict';
-
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
@@ -29,4 +27,4 @@ export default {
       {test: /\.css$/, loaders: ['style', 'css']}
     ]
   }
-}
+};

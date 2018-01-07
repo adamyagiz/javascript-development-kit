@@ -1,5 +1,3 @@
-'use strict';
-
 /* This fils contains references to the vendor libs
   we use in the project. This file is used by webpack
   in the production build ONLY. A separate bundle for

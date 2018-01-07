@@ -1,5 +1,3 @@
-'use strict';
-
 import 'whatwg-fetch';
 import getBaseUrl from './baseUrl';
 

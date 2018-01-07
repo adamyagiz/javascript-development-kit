@@ -1,5 +1,3 @@
-'use strict';
-
 import {expect} from 'chai'; // using the "expect" style that comes with Chai
 import jsdom from 'jsdom';
 import fs from 'fs';
@@ -22,4 +20,4 @@ describe('index.html', () => {
       window.close();
     });
   });
-})
+});
