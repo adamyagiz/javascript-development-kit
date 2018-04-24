@@ -25,6 +25,7 @@
   "author": "Adam Yagiz",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {

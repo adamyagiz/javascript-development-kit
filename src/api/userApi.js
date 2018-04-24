@@ -3,7 +3,7 @@ import getBaseUrl from './baseUrl';
 
 const baseUrl = getBaseUrl();
 
-// only one function being exported for public consumption
+// only exported functions are for public consumption
 export function getUsers() {
   return get('users');
 }

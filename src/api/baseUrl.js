@@ -1,7 +1,6 @@
 export default function getBaseUrl() {
   // return 'http://localhost:3001/';
-  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://sleepy-brushlands-88821.herokuapp.com/';
-  // return getQueryStringParameterByName('useMockApi') ? 'https://sleepy-brushlands-88821.herokuapp.com/' : 'http://localhost:3001/';
+  return getQueryStringParameterByName('noMockApi') ? 'https://sleepy-brushlands-88821.herokuapp.com/' : 'http://localhost:3001/';
 }
 
 function getQueryStringParameterByName(name, url) {

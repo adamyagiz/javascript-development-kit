@@ -2,6 +2,7 @@ import express from 'express'; // ES6 module format
 import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
+import bodyParser from 'body-parser';
 import config from '../webpack.config.dev';
 
 // file-wide disabling of eslint rule
@@ -16,6 +17,9 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
@@ -26,6 +30,15 @@ app.get('/users', (req, res) => {
     {"id": 2,"firstName": "Sue","lastName": "Jenkins","email": "itssue@yahoo.com"},
     {"id": 3,"firstName": "Tim","lastName": "Washington","email": "itstim@hotmail.com"}
   ]);
+});
+
+app.post('/users', (req, res) => {
+  const userData = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email
+  };
+  res.json(userData);
 });
 
 app.listen(port, function(err) {
