@@ -18,6 +18,13 @@ test_script:
  # Run our tests
  - npm test
 
+# only increment the build number when building master
+pull_requests:
+  do_not_increment_build_number: true
+
+# don't build "feature" branches
+skip_branch_with_pr: true
+
 # only run off master
 branches:
  only:
