@@ -1,12 +1,12 @@
 {
-  // Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
-  // Documentation: http://www.jshint.com/docs/options/
-  "browser": true,
-  "esnext": true,
-  "globals": {},
-  "strict": false,
-  "undef": true,
-  "unused": true,
-  "devel": true,
-  "eqeqeq": true
+	// Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+	// Documentation: http://www.jshint.com/docs/options/
+	"browser": true,
+	"esnext": true,
+	"globals": {},
+	"strict": false,
+	"undef": true,
+	"unused": true,
+	"devel": true,
+	"eqeqeq": true
 }
