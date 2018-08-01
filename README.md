@@ -231,3 +231,5 @@ Pluralsight - Building a JavaScript Development Environment
     - Would we benefit from a starter kit?
     - What are our JS pain points? Testing? Deployment? Coding styles?
     - Would we benefit from a demo app?
+
+### Notes:
