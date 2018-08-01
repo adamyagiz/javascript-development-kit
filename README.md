@@ -234,7 +234,4 @@ Pluralsight - Building a JavaScript Development Environment
 
 ### Notes:
 - This is a change on dev...
-<<<<<<< HEAD
 - This should affect the PR...
-=======
->>>>>>> Another change on dev
