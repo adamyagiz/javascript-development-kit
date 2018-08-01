@@ -18,5 +18,10 @@ test_script:
  # Run our tests
  - npm test
 
+# only run off master
+branches:
+ only:
+  - master
+
 # Don't actuall build the app
 build: off
